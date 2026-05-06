@@ -135,6 +135,21 @@
     z-index: 1;
   }
 
+  .hero-notice {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 10px 18px;
+    background: rgba(201, 169, 97, 0.15);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    font-size: 13px;
+    color: var(--gold);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    position: relative;
+    z-index: 1;
+  }
+
   /* ===== Section Common ===== */
   section {
     padding: 64px 28px;
@@ -281,6 +296,23 @@
     margin-top: 16px;
   }
 
+  .try-me-message {
+    font-size: 15px;
+    line-height: 2;
+    color: var(--text-light);
+    margin-top: 28px;
+    padding: 24px 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .try-me-accent {
+    color: var(--gold);
+    font-weight: 700;
+  }
+
   /* ===== Section 5: Schedule ===== */
   .schedule {
     background: #ffffff;
@@ -339,6 +371,21 @@
   .schedule-status.available {
     background: var(--gold);
     color: var(--navy-900);
+  }
+
+  .schedule-status.full {
+    background: #9ca3af;
+    color: #fff;
+  }
+
+  .schedule-card.sold-out {
+    opacity: 0.55;
+    background: #f3f0e8;
+  }
+
+  .schedule-card.sold-out .schedule-date {
+    text-decoration: line-through;
+    text-decoration-color: #9ca3af;
   }
 
   .schedule-warning {
@@ -573,6 +620,9 @@
       ご自宅でそのまま施術<br>
       そのまま休めます
     </p>
+    <p class="hero-notice">
+      ＼ 5/12 満枠御礼。残るは 5/19・5/26 ／
+    </p>
   </section>
 
   <!-- ② 共感 -->
@@ -623,6 +673,19 @@
       <div class="benefit-main">施術料金</div>
       <div class="benefit-price">ほぼ半額</div>
     </div>
+
+    <p class="try-me-message">
+      「一度受けてみたい」<br>
+      「自分との相性を試してみたい」<br>
+      <br>
+      そう感じていただける方に、<br>
+      <span class="try-me-accent">いちばんお得な今のうちに</span><br>
+      私の施術をご体験いただきたい——<br>
+      <br>
+      そんな想いから、<br>
+      プレオープン価格でご案内しています。
+    </p>
+
     <p class="monitor-note">※ 簡単なアンケートにご協力をお願いいたします</p>
   </section>
 
@@ -631,31 +694,31 @@
     <span class="section-label">SCHEDULE</span>
     <h2 class="section-title">ご予約可能日程</h2>
 
-    <div class="schedule-card featured">
+    <div class="schedule-card sold-out">
       <div>
         <div class="schedule-date">5月12日</div>
         <div class="schedule-time">20:00 〜 23:00</div>
       </div>
-      <div class="schedule-status urgent">残り1枠</div>
+      <div class="schedule-status full">満枠御礼</div>
     </div>
 
-    <div class="schedule-card">
+    <div class="schedule-card featured">
       <div>
         <div class="schedule-date">5月19日</div>
         <div class="schedule-time">特別枠にてご案内</div>
       </div>
-      <div class="schedule-status available">受付中</div>
+      <div class="schedule-status urgent">受付中</div>
     </div>
 
-    <div class="schedule-card">
+    <div class="schedule-card featured">
       <div>
         <div class="schedule-date">5月26日</div>
         <div class="schedule-time">特別枠にてご案内</div>
       </div>
-      <div class="schedule-status available">受付中</div>
+      <div class="schedule-status urgent">受付中</div>
     </div>
 
-    <p class="schedule-warning">※ 埋まり次第終了</p>
+    <p class="schedule-warning">※ 5月19日・26日も埋まり次第終了となります</p>
   </section>
 
   <!-- ⑥ 予約方法（CTA） -->
