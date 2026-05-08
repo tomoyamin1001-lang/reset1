@@ -244,6 +244,74 @@
     font-weight: 600;
   }
 
+  /* ===== Section 3.5: Philosophy ===== */
+  .philosophy {
+    background: linear-gradient(180deg, #ffffff 0%, var(--bg-cream) 100%);
+    padding: 72px 28px;
+  }
+
+  .philosophy-card {
+    background: #ffffff;
+    border: 1px solid #ece6d8;
+    border-radius: 4px;
+    padding: 44px 28px;
+    margin-top: 12px;
+    position: relative;
+    box-shadow: 0 8px 30px rgba(13, 27, 42, 0.07);
+  }
+
+  .philosophy-mark {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: 64px;
+    color: var(--gold);
+    opacity: 0.35;
+    font-family: Georgia, serif;
+    line-height: 1;
+  }
+
+  .philosophy-lead {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .philosophy-quote {
+    text-align: center;
+    font-size: 17px;
+    line-height: 2;
+    color: var(--navy-900);
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+
+  .philosophy-accent {
+    display: inline-block;
+    color: var(--navy-900);
+    background: linear-gradient(transparent 65%, rgba(201, 169, 97, 0.4) 65%);
+    padding: 0 4px;
+    font-weight: 700;
+  }
+
+  .philosophy-divider {
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+    margin: 28px auto;
+  }
+
+  .philosophy-detail {
+    text-align: center;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--text-dark);
+    opacity: 0.85;
+  }
+
   /* ===== Section 4: Monitor ===== */
   .monitor {
     background: var(--navy-900);
@@ -386,6 +454,81 @@
   .schedule-card.sold-out .schedule-date {
     text-decoration: line-through;
     text-decoration-color: #9ca3af;
+  }
+
+  .recommended-times {
+    background: var(--bg-cream);
+    border: 1px solid #ece6d8;
+    border-radius: 4px;
+    padding: 24px 22px;
+    margin-bottom: 24px;
+  }
+
+  .recommended-label {
+    display: inline-block;
+    background: var(--navy-900);
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    padding: 4px 12px;
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+
+  .recommended-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy-900);
+    margin-bottom: 14px;
+    line-height: 1.6;
+  }
+
+  .recommended-slots {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .slot-pill {
+    flex: 1;
+    background: #ffffff;
+    border: 1.5px solid var(--gold);
+    border-radius: 4px;
+    padding: 14px 8px;
+    text-align: center;
+  }
+
+  .slot-pill .slot-time {
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--navy-900);
+    letter-spacing: 0.05em;
+  }
+
+  .slot-pill .slot-tag {
+    display: block;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 4px;
+  }
+
+  .recommended-detail {
+    font-size: 13px;
+    line-height: 1.9;
+    color: var(--text-dark);
+    opacity: 0.85;
+  }
+
+  .schedule-time-options {
+    font-size: 13px;
+    color: var(--gold);
+    margin-top: 4px;
+    font-weight: 500;
+  }
+
+  .schedule-card.featured .schedule-time-options {
+    color: var(--gold);
   }
 
   .schedule-warning {
@@ -618,7 +761,7 @@
     <p class="hero-message">「その疲れ、<br>今日のうちに整えませんか？」</p>
     <p class="hero-detail">
       ご自宅でそのまま施術<br>
-      そのまま休めます
+      <span style="color: var(--gold); font-weight: 600;">"その日しっかり休める状態"</span>へ
     </p>
     <p class="hero-notice">
       ＼ 5/12 満枠御礼。残るは 5/19・5/26 ／
@@ -660,6 +803,30 @@
     </div>
   </section>
 
+  <!-- ③.5 私の特徴 -->
+  <section class="philosophy">
+    <span class="section-label">MY APPROACH</span>
+    <h2 class="section-title">私の特徴</h2>
+
+    <div class="philosophy-card">
+      <div class="philosophy-mark">"</div>
+      <p class="philosophy-lead">― 私が大切にしていること ―</p>
+      <p class="philosophy-quote">
+        日々の疲労やストレスによって<br>
+        深く休めていないお身体を、<br>
+        <span class="philosophy-accent">"その日しっかり休める状態"</span><br>
+        へ導くサポートを行っています。
+      </p>
+      <div class="philosophy-divider"></div>
+      <p class="philosophy-detail">
+        ただ気持ちよさを感じてもらうだけでなく、<br>
+        施術後のその夜から、<br>
+        身体がしっかり休まる感覚を<br>
+        実感していただけるよう努めています。
+      </p>
+    </div>
+  </section>
+
   <!-- ④ モニター募集 -->
   <section class="monitor">
     <span class="section-label" style="color: var(--gold);">MONITOR CAMPAIGN</span>
@@ -694,6 +861,26 @@
     <span class="section-label">SCHEDULE</span>
     <h2 class="section-title">ご予約可能日程</h2>
 
+    <div class="recommended-times">
+      <span class="recommended-label">RECOMMENDED</span>
+      <div class="recommended-title">特におすすめの時間帯</div>
+      <div class="recommended-slots">
+        <div class="slot-pill">
+          <span class="slot-time">17:00〜</span>
+          <span class="slot-tag">仕事終わりに</span>
+        </div>
+        <div class="slot-pill">
+          <span class="slot-time">20:00〜</span>
+          <span class="slot-tag">就寝前に</span>
+        </div>
+      </div>
+      <p class="recommended-detail">
+        夕方の17時〜は、一日の緊張をほどく時間に。<br>
+        夜の20時〜は、そのまま深い眠りへ繋がる時間に。<br>
+        どちらも"その日しっかり休める"流れを作りやすい時間帯です。
+      </p>
+    </div>
+
     <div class="schedule-card sold-out">
       <div>
         <div class="schedule-date">5月12日</div>
@@ -706,6 +893,7 @@
       <div>
         <div class="schedule-date">5月19日</div>
         <div class="schedule-time">特別枠にてご案内</div>
+        <div class="schedule-time-options">17:00〜 / 20:00〜 おすすめ</div>
       </div>
       <div class="schedule-status urgent">受付中</div>
     </div>
@@ -714,6 +902,7 @@
       <div>
         <div class="schedule-date">5月26日</div>
         <div class="schedule-time">特別枠にてご案内</div>
+        <div class="schedule-time-options">17:00〜 / 20:00〜 おすすめ</div>
       </div>
       <div class="schedule-status urgent">受付中</div>
     </div>
