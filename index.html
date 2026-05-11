@@ -485,7 +485,7 @@
 
   .recommended-slots {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 14px;
   }
 
@@ -494,23 +494,25 @@
     background: #ffffff;
     border: 1.5px solid var(--gold);
     border-radius: 4px;
-    padding: 14px 8px;
+    padding: 12px 4px;
     text-align: center;
+    min-width: 0;
   }
 
   .slot-pill .slot-time {
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 800;
     color: var(--navy-900);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
   }
 
   .slot-pill .slot-tag {
     display: block;
-    font-size: 11px;
+    font-size: 10px;
     color: var(--text-muted);
     margin-top: 4px;
+    white-space: nowrap;
   }
 
   .recommended-detail {
@@ -523,12 +525,51 @@
   .schedule-time-options {
     font-size: 13px;
     color: var(--gold);
-    margin-top: 4px;
+    margin-top: 6px;
     font-weight: 500;
   }
 
   .schedule-card.featured .schedule-time-options {
     color: var(--gold);
+  }
+
+  .slot-inline {
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 6px;
+    font-weight: 500;
+  }
+
+  .slot-inline .slot-booked {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: line-through;
+    text-decoration-color: rgba(255, 255, 255, 0.5);
+    margin-right: 6px;
+  }
+
+  .slot-inline .slot-booked-tag {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.55);
+    margin-right: 10px;
+    letter-spacing: 0.05em;
+  }
+
+  .slot-inline .slot-open {
+    color: var(--gold);
+    font-weight: 700;
+  }
+
+  .slot-inline .slot-open-tag {
+    font-size: 11px;
+    color: var(--gold);
+    margin-left: 4px;
+    margin-right: 10px;
+    letter-spacing: 0.05em;
+  }
+
+  .slot-inline .slot-divider {
+    color: rgba(255, 255, 255, 0.35);
+    margin: 0 8px;
   }
 
   .schedule-warning {
@@ -764,7 +805,7 @@
       <span style="color: var(--gold); font-weight: 600;">"その日しっかり休める状態"</span>へ
     </p>
     <p class="hero-notice">
-      ＼ 5/12 満枠御礼。残るは 5/19・5/26 ／
+      ＼ 5/19・5/26 受付中（日中〜夜まで対応可）／
     </p>
   </section>
 
@@ -863,8 +904,12 @@
 
     <div class="recommended-times">
       <span class="recommended-label">RECOMMENDED</span>
-      <div class="recommended-title">特におすすめの時間帯</div>
+      <div class="recommended-title">ご予約可能な時間帯</div>
       <div class="recommended-slots">
+        <div class="slot-pill">
+          <span class="slot-time">14:00〜</span>
+          <span class="slot-tag">日中の合間に</span>
+        </div>
         <div class="slot-pill">
           <span class="slot-time">17:00〜</span>
           <span class="slot-tag">仕事終わりに</span>
@@ -875,9 +920,10 @@
         </div>
       </div>
       <p class="recommended-detail">
+        昼の14時〜は、午後の身体を一度リセットする時間に。<br>
         夕方の17時〜は、一日の緊張をほどく時間に。<br>
         夜の20時〜は、そのまま深い眠りへ繋がる時間に。<br>
-        どちらも"その日しっかり休める"流れを作りやすい時間帯です。
+        いずれも"その日しっかり休める"流れを作りやすい時間帯です。
       </p>
     </div>
 
@@ -893,7 +939,13 @@
       <div>
         <div class="schedule-date">5月19日</div>
         <div class="schedule-time">特別枠にてご案内</div>
-        <div class="schedule-time-options">17:00〜 / 20:00〜 おすすめ</div>
+        <div class="slot-inline">
+          <span class="slot-open">14:00〜</span>
+          <span class="slot-divider">/</span>
+          <span class="slot-open">17:00〜</span>
+          <span class="slot-divider">/</span>
+          <span class="slot-open">20:00〜</span>
+        </div>
       </div>
       <div class="schedule-status urgent">受付中</div>
     </div>
@@ -902,9 +954,13 @@
       <div>
         <div class="schedule-date">5月26日</div>
         <div class="schedule-time">特別枠にてご案内</div>
-        <div class="schedule-time-options">17:00〜 / 20:00〜 おすすめ</div>
+        <div class="slot-inline">
+          <span class="slot-open">14:00〜</span><span class="slot-open-tag">受付中</span>
+          <span class="slot-booked">19:00〜20:00</span><span class="slot-booked-tag">予約済</span>
+          <span class="slot-open">21:00〜</span><span class="slot-open-tag">受付中</span>
+        </div>
       </div>
-      <div class="schedule-status urgent">受付中</div>
+      <div class="schedule-status urgent">残り2枠</div>
     </div>
 
     <p class="schedule-warning">※ 5月19日・26日も埋まり次第終了となります</p>
