@@ -250,6 +250,52 @@
     padding: 72px 28px;
   }
 
+  .profile-image-wrap {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 28px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--gold);
+    box-shadow: 0 8px 24px rgba(13, 27, 42, 0.15);
+    background: var(--bg-cream);
+    position: relative;
+  }
+
+  .profile-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+    display: block;
+  }
+
+  .profile-image-wrap .placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 11px;
+    text-align: center;
+    padding: 12px;
+    line-height: 1.5;
+  }
+
+  .profile-image-wrap img.profile-loaded + .placeholder {
+    display: none;
+  }
+
+  .profile-name {
+    text-align: center;
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
   .philosophy-card {
     background: #ffffff;
     border: 1px solid #ece6d8;
@@ -848,6 +894,12 @@
   <section class="philosophy">
     <span class="section-label">MY APPROACH</span>
     <h2 class="section-title">私の特徴</h2>
+
+    <div class="profile-image-wrap">
+      <img src="profile.jpg" alt="施術者プロフィール" onload="this.classList.add('profile-loaded')">
+      <div class="placeholder">profile.jpg を<br>同じフォルダに<br>アップロードしてください</div>
+    </div>
+    <p class="profile-name">― 施術者 ―</p>
 
     <div class="philosophy-card">
       <div class="philosophy-mark">"</div>
