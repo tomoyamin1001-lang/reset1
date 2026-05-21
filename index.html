@@ -449,6 +449,26 @@
     border-color: var(--navy-900);
   }
 
+  .schedule-card.last-one {
+    border: 2px solid var(--gold);
+    box-shadow: 0 8px 28px rgba(201, 169, 97, 0.3);
+    position: relative;
+  }
+
+  .schedule-card.last-one::before {
+    content: "FINAL";
+    position: absolute;
+    top: -11px;
+    left: 24px;
+    background: var(--gold);
+    color: var(--navy-900);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    padding: 3px 14px;
+    border-radius: 2px;
+  }
+
   .schedule-date {
     font-size: 18px;
     font-weight: 700;
@@ -851,7 +871,7 @@
       <span style="color: var(--gold); font-weight: 600;">"その日しっかり休める状態"</span>へ
     </p>
     <p class="hero-notice">
-      ＼ 5/19・5/26 受付中（日中〜夜まで対応可）／
+      ＼ ラスト1枠 5/26（14:00〜）受付中 ／
     </p>
   </section>
 
@@ -979,20 +999,7 @@
       </p>
     </div>
 
-    <div class="schedule-card featured">
-      <div>
-        <div class="schedule-date">5月19日</div>
-        <div class="schedule-time">特別枠にてご案内</div>
-        <div class="slot-inline">
-          <span class="slot-booked">14:00〜</span><span class="slot-booked-tag">予約済</span>
-          <span class="slot-open">17:00〜</span><span class="slot-open-tag">受付中</span>
-          <span class="slot-open">20:00〜</span><span class="slot-open-tag">受付中</span>
-        </div>
-      </div>
-      <div class="schedule-status urgent">残り2枠</div>
-    </div>
-
-    <div class="schedule-card featured">
+    <div class="schedule-card featured last-one">
       <div>
         <div class="schedule-date">5月26日</div>
         <div class="schedule-time">特別枠にてご案内</div>
@@ -1002,10 +1009,10 @@
           <span class="slot-booked">21:00〜</span><span class="slot-booked-tag">予約済</span>
         </div>
       </div>
-      <div class="schedule-status urgent">残り1枠</div>
+      <div class="schedule-status urgent">ラスト1枠</div>
     </div>
 
-    <p class="schedule-warning">※ 5月19日・26日も埋まり次第終了となります</p>
+    <p class="schedule-warning">※ プレオープン期間中、ご案内できる最後の1枠です</p>
   </section>
 
   <!-- ⑥ 予約方法（CTA） -->
