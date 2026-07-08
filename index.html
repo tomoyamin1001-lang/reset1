@@ -1438,6 +1438,62 @@
     margin-bottom: 12px;
   }
 
+  /* LINE Benefit Image Slot */
+  .line-image-wrap {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    background: #ffffff;
+    border: 2px dashed rgba(6, 199, 85, 0.4);
+    box-shadow: 0 8px 24px rgba(13, 27, 42, 0.08);
+    position: relative;
+  }
+
+  .line-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .line-image-wrap img.image-loaded {
+    opacity: 1;
+  }
+
+  .line-image-wrap img.image-loaded + .image-placeholder {
+    display: none;
+  }
+
+  .image-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 24px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 12px;
+    line-height: 1.8;
+    background: linear-gradient(135deg, #f4faf5 0%, #ffffff 100%);
+  }
+
+  .image-placeholder strong {
+    color: var(--navy-900);
+    font-size: 13px;
+  }
+
+  .image-placeholder-icon {
+    font-size: 42px;
+    opacity: 0.5;
+  }
+
   /* Shop Card */
   .shop-card {
     background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-700) 100%);
@@ -1546,15 +1602,6 @@
   }
 
   /* Reward Box */
-  .reward-arrow {
-    text-align: center;
-    font-size: 13px;
-    color: var(--line-green);
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    margin: 20px 0 12px;
-  }
-
   .reward-box {
     background: #ffffff;
     border: 2px solid var(--line-green);
@@ -1564,30 +1611,80 @@
     box-shadow: 0 6px 20px rgba(6, 199, 85, 0.15);
   }
 
+  .reward-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--navy-900);
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+  }
+
+  .reward-count-icon {
+    font-size: 18px;
+  }
+
   .reward-main {
     font-size: 20px;
     line-height: 1.5;
     color: var(--navy-900);
     font-weight: 700;
-    margin-bottom: 16px;
-    padding-bottom: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px dashed rgba(6, 199, 85, 0.4);
-  }
-
-  .reward-time {
-    display: inline-block;
-    font-size: 16px;
-    color: var(--text-muted);
-    font-weight: 600;
-    margin-bottom: 4px;
   }
 
   .reward-strong {
     display: inline-block;
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 900;
     color: var(--line-green);
     letter-spacing: 0.02em;
+    line-height: 1.4;
+  }
+
+  .reward-flow {
+    text-align: left;
+    background: var(--bg-cream);
+    border-radius: 6px;
+    padding: 18px 18px;
+    margin-bottom: 18px;
+  }
+
+  .reward-flow-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 6px 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--text-dark);
+  }
+
+  .reward-flow-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background: var(--line-green);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 800;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .reward-flow-arrow {
+    text-align: center;
+    color: var(--line-green);
+    font-size: 14px;
+    line-height: 1;
+    margin: 2px 0;
   }
 
   .reward-detail {
@@ -2027,45 +2124,57 @@
       プレゼントいたします。
     </p>
 
-    <!-- ショップカードのビジュアル -->
-    <div class="shop-card">
-      <div class="shop-card-header">
-        <span class="shop-card-brand">TOMOYAMIN</span>
-        <span class="shop-card-title">ORIGINAL SHOP CARD</span>
-      </div>
-      <div class="stamp-grid">
-        <div class="stamp">1</div>
-        <div class="stamp">2</div>
-        <div class="stamp">3</div>
-        <div class="stamp">4</div>
-        <div class="stamp">5</div>
-        <div class="stamp final">
-          <span class="stamp-star">★</span>
-          <span class="stamp-label">GOAL</span>
+    <!-- ショップカードの実物イメージ（画像アップロードで表示） -->
+    <div class="line-image-wrap">
+      <img src="line_benefit.jpg" alt="ショップカードイメージ" onload="this.classList.add('image-loaded')">
+      <div class="image-placeholder">
+        <div class="image-placeholder-icon">🖼</div>
+        <div>
+          <strong>ここに画像が表示されます</strong><br>
+          <span>line_benefit.jpg を同じフォルダに<br>アップロードしてください</span>
         </div>
-      </div>
-      <div class="shop-card-footer">
-        <span class="shop-card-note">1回のご利用 = 1スタンプ</span>
       </div>
     </div>
 
-    <!-- 特典内容 -->
+    <!-- 特典の使い方 -->
     <div class="reward-box">
-      <div class="reward-arrow">↓ スタンプが貯まると ↓</div>
-      <div class="reward-main">
-        <span class="reward-time">30分延長</span><br>
-        <span class="reward-strong">無料券</span>
+      <div class="reward-count">
+        <span class="reward-count-icon">🎁</span>
+        <span>5個貯まると</span>
+        <span class="reward-count-icon">⏱</span>
       </div>
+      <div class="reward-main">
+        <span class="reward-strong">30分延長<br>無料クーポン</span>
+      </div>
+
+      <div class="reward-flow">
+        <div class="reward-flow-item">
+          <span class="reward-flow-num">1</span>
+          <span>1来店につき <strong>1スタンプ</strong> を付与</span>
+        </div>
+        <div class="reward-flow-arrow">↓</div>
+        <div class="reward-flow-item">
+          <span class="reward-flow-num">2</span>
+          <span><strong>5個</strong> スタンプを貯める</span>
+        </div>
+        <div class="reward-flow-arrow">↓</div>
+        <div class="reward-flow-item">
+          <span class="reward-flow-num">3</span>
+          <span>次回通常コースとご一緒に<br><strong>30分延長無料クーポン</strong>を使用</span>
+        </div>
+      </div>
+
       <p class="reward-detail">
-        例：通常90分 →<span class="reward-highlight">120分にアップグレード</span>可能に。<br>
-        施術時間そのままで、<br>
-        さらにじっくり整える時間へ。
+        例：通常90分コース + 30分延長で、<br>
+        <span class="reward-highlight">120分にアップグレード</span>可能に。<br>
+        施術料金はそのまま、時間だけ贅沢に。
       </p>
     </div>
 
     <p class="line-privilege-note">
-      ※ 8月31日までにご登録の方が対象です<br>
-      ※ ショップカードはご来店時にお渡しいたします
+      ※ 8月31日までに公式LINEご登録の方が対象です<br>
+      ※ ショップカードは初回施術時にお渡しいたします<br>
+      ※ 5個貯まったら、次回通常コースとご一緒にお使いください
     </p>
   </section>
 
