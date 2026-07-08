@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>男の疲労リセット | 出張もみほぐし TOMOYAMIN（和歌山・田辺・上富田・白浜）</title>
-<meta name="description" content="その疲労、家で斬る。出張もみほぐしTOMOYAMIN。6月オープン記念キャンペーン実施中。事前決済で出張費無料・公式LINEで予約完結。和歌山（田辺・上富田・白浜周辺）対応。">
+<meta name="description" content="その疲労、家で斬る。出張もみほぐしTOMOYAMIN。8月31日までにご予約の方は、今年いっぱい現在の価格でご案内。9月より料金改定予定。事前決済で出張費無料・公式LINEで予約完結。和歌山（田辺・上富田・白浜周辺）対応。">
 <style>
   :root {
     --navy-900: #0d1b2a;
@@ -912,6 +912,178 @@
     border-top: 4px solid var(--gold);
   }
 
+  /* ===== Story Card (感謝のお知らせ) ===== */
+  .story-card {
+    background: #ffffff;
+    border-left: 4px solid var(--gold);
+    padding: 32px 28px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(13, 27, 42, 0.05);
+  }
+
+  .story-lead {
+    text-align: center;
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .story-text {
+    text-align: center;
+    font-size: 15px;
+    line-height: 2;
+    color: var(--text-dark);
+  }
+
+  .story-text .story-strong {
+    color: var(--navy-900);
+    font-weight: 800;
+    font-size: 17px;
+    background: linear-gradient(transparent 65%, rgba(201, 169, 97, 0.35) 65%);
+    padding: 0 4px;
+  }
+
+  /* ===== Privilege Card (早期ご予約特典) ===== */
+  .privilege-card {
+    background: linear-gradient(180deg, var(--navy-900) 0%, var(--navy-700) 100%);
+    color: var(--text-light);
+    padding: 36px 24px 32px;
+    border-radius: 6px;
+    box-shadow: 0 12px 32px rgba(13, 27, 42, 0.2);
+    position: relative;
+  }
+
+  .privilege-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy-900);
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    padding: 6px 16px;
+    font-weight: 700;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+
+  .privilege-headline {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.6;
+    margin-bottom: 28px;
+    color: #fff;
+  }
+
+  .privilege-main {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    padding: 24px 20px;
+    margin-bottom: 20px;
+  }
+
+  .privilege-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 8px 0;
+  }
+
+  .privilege-line p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 600;
+    flex: 1;
+  }
+
+  .privilege-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--gold);
+    color: var(--navy-900);
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 800;
+    font-family: Georgia, serif;
+    flex-shrink: 0;
+  }
+
+  .privilege-highlight {
+    color: var(--gold);
+    font-weight: 800;
+  }
+
+  .privilege-plus {
+    text-align: center;
+    font-size: 22px;
+    color: var(--gold);
+    font-weight: 800;
+    margin: 4px 0;
+    line-height: 1;
+  }
+
+  .privilege-result {
+    background: linear-gradient(135deg, var(--gold) 0%, #b8932f 100%);
+    color: var(--navy-900);
+    padding: 24px 20px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 20px rgba(201, 169, 97, 0.3);
+  }
+
+  .privilege-result-label {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .privilege-result-main {
+    font-size: 17px;
+    line-height: 1.9;
+    font-weight: 700;
+  }
+
+  .privilege-result-strong {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+  }
+
+  .privilege-result-price {
+    font-size: 22px;
+    font-weight: 800;
+    background: rgba(13, 27, 42, 0.15);
+    padding: 0 8px;
+    border-radius: 2px;
+  }
+
+  .privilege-note {
+    text-align: center;
+    font-size: 13px;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.85);
+    padding-top: 4px;
+  }
+
+  /* ===== Menu update ===== */
+  .campaign-note-bottom {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px dashed rgba(201, 169, 97, 0.4);
+    font-size: 13px;
+    line-height: 1.9;
+    color: var(--text-dark);
+    text-align: center;
+  }
+
   /* ===== Section: Menu ===== */
   .menu {
     background: #ffffff;
@@ -1062,6 +1234,80 @@
     color: var(--navy-900);
   }
 
+  /* ===== Option Card ===== */
+  .option-card {
+    background: linear-gradient(135deg, var(--bg-cream) 0%, #ffffff 100%);
+    border: 2px solid var(--gold);
+    border-radius: 6px;
+    padding: 24px 22px;
+    margin: 8px 0 28px;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(201, 169, 97, 0.15);
+  }
+
+  .option-badge {
+    position: absolute;
+    top: -11px;
+    left: 20px;
+    background: var(--navy-900);
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    padding: 4px 14px;
+    font-weight: 700;
+    border-radius: 2px;
+  }
+
+  .option-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 4px;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed rgba(201, 169, 97, 0.4);
+    margin-bottom: 14px;
+  }
+
+  .option-title {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--navy-900);
+    letter-spacing: 0.02em;
+  }
+
+  .option-price {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--gold);
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+
+  .option-plus {
+    font-size: 18px;
+    margin-right: 2px;
+  }
+
+  .yen-small {
+    font-size: 13px;
+    margin-left: 2px;
+    font-weight: 600;
+  }
+
+  .option-note {
+    font-size: 13px;
+    line-height: 1.9;
+    color: var(--text-dark);
+  }
+
+  .option-highlight {
+    color: var(--navy-900);
+    font-weight: 700;
+    background: linear-gradient(transparent 65%, rgba(201, 169, 97, 0.35) 65%);
+    padding: 0 4px;
+  }
+
   .campaign-note {
     background: linear-gradient(135deg, rgba(201, 169, 97, 0.1) 0%, rgba(201, 169, 97, 0.04) 100%);
     border: 1px dashed var(--gold);
@@ -1139,6 +1385,230 @@
   .gold-text {
     color: #b8932f;
     font-weight: 800;
+  }
+
+  /* ===== Section: LINE Privilege (夏季限定) ===== */
+  .line-privilege {
+    background: linear-gradient(180deg, #f4faf5 0%, #e9f5ec 100%);
+    padding: 64px 28px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .line-icon-inline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--line-green);
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+    margin-bottom: 6px;
+  }
+
+  .line-privilege-intro {
+    text-align: center;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--text-dark);
+    margin-bottom: 36px;
+  }
+
+  .lp-strong {
+    color: var(--navy-900);
+    font-weight: 800;
+    background: linear-gradient(transparent 65%, rgba(6, 199, 85, 0.25) 65%);
+    padding: 0 4px;
+  }
+
+  .deadline-tag {
+    display: inline-block;
+    background: var(--line-green);
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 14px;
+    border-radius: 100px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  /* Shop Card */
+  .shop-card {
+    background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-700) 100%);
+    color: #fff;
+    border-radius: 8px;
+    padding: 24px 22px;
+    margin-bottom: 24px;
+    box-shadow: 0 12px 32px rgba(13, 27, 42, 0.25);
+    border: 2px solid var(--gold);
+    position: relative;
+  }
+
+  .shop-card::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 1px solid rgba(201, 169, 97, 0.4);
+    border-radius: 6px;
+    pointer-events: none;
+  }
+
+  .shop-card-header {
+    text-align: center;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px dashed rgba(201, 169, 97, 0.4);
+    position: relative;
+    z-index: 1;
+  }
+
+  .shop-card-brand {
+    display: block;
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    font-family: Georgia, serif;
+    margin-bottom: 4px;
+  }
+
+  .shop-card-title {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 600;
+  }
+
+  .stamp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 4px 0 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .stamp {
+    aspect-ratio: 1;
+    background: transparent;
+    border: 1.5px dashed rgba(201, 169, 97, 0.55);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.35);
+    font-family: Georgia, serif;
+  }
+
+  .stamp.final {
+    background: linear-gradient(135deg, var(--gold) 0%, #b8932f 100%);
+    border-color: var(--gold);
+    color: var(--navy-900);
+    flex-direction: column;
+    gap: 2px;
+    box-shadow: 0 4px 12px rgba(201, 169, 97, 0.4);
+  }
+
+  .stamp-star {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .stamp-label {
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    font-weight: 800;
+    font-family: sans-serif;
+  }
+
+  .shop-card-footer {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .shop-card-note {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.65);
+    letter-spacing: 0.05em;
+  }
+
+  /* Reward Box */
+  .reward-arrow {
+    text-align: center;
+    font-size: 13px;
+    color: var(--line-green);
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin: 20px 0 12px;
+  }
+
+  .reward-box {
+    background: #ffffff;
+    border: 2px solid var(--line-green);
+    border-radius: 8px;
+    padding: 24px 22px 22px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(6, 199, 85, 0.15);
+  }
+
+  .reward-main {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--navy-900);
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed rgba(6, 199, 85, 0.4);
+  }
+
+  .reward-time {
+    display: inline-block;
+    font-size: 16px;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .reward-strong {
+    display: inline-block;
+    font-size: 34px;
+    font-weight: 900;
+    color: var(--line-green);
+    letter-spacing: 0.02em;
+  }
+
+  .reward-detail {
+    font-size: 13px;
+    line-height: 1.9;
+    color: var(--text-dark);
+  }
+
+  .reward-highlight {
+    color: var(--navy-900);
+    font-weight: 700;
+    background: linear-gradient(transparent 65%, rgba(6, 199, 85, 0.2) 65%);
+    padding: 0 4px;
+  }
+
+  .line-privilege-note {
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.9;
+    color: var(--text-muted);
+    margin-top: 20px;
   }
 
   /* ===== Section: Benefits ===== */
@@ -1297,7 +1767,7 @@
 
   <!-- ① ファーストビュー -->
   <section class="hero">
-    <span class="hero-badge">GRAND OPEN 6月</span>
+    <span class="hero-badge">〜 8月31日 早期ご予約特典</span>
     <p class="hero-tagline">男の疲労リセット</p>
     <h1 class="hero-brand">
       出張もみほぐし<br>
@@ -1319,7 +1789,7 @@
       <span style="color: var(--gold); font-weight: 600;">"その日しっかり休める状態"</span>へ
     </p>
     <p class="hero-notice">
-      ＼ 6月オープン記念キャンペーン実施中 ／
+      ＼ 夏季限定 8/31までの特典を実施中 ／
     </p>
   </section>
 
@@ -1388,44 +1858,56 @@
     </div>
   </section>
 
-  <!-- ④ 6月オープン記念キャンペーン -->
+  <!-- ④ 夏の特別ご案内（早期ご予約特典） -->
   <section class="campaign">
-    <span class="section-label" style="color: var(--gold);">6月 GRAND OPEN CAMPAIGN</span>
-    <h2 class="section-title">6月オープン<br>記念キャンペーン</h2>
+    <span class="section-label" style="color: var(--gold);">SUMMER SPECIAL</span>
+    <h2 class="section-title">夏の特別ご案内</h2>
     <p class="campaign-intro">
-      正式オープンを記念して、<br>
-      <strong>2つの期間限定キャンペーン</strong>を<br>
-      ご用意いたしました。
+      いつもありがとうございます。<br>
+      オープンから多くのお客様に<br>
+      ご利用いただき、心より感謝申し上げます。
     </p>
 
-    <!-- Phase 1 -->
-    <div class="campaign-card phase-1">
-      <div class="phase-label">PHASE 1 ／ プレオープン特別企画</div>
-      <div class="phase-date">
-        <span class="date-icon">📅</span>
-        <span>6月5日(金)〜10日(水)</span>
-      </div>
-      <div class="phase-headline">施術料金<br><span class="phase-price">『ほぼ半額』</span></div>
-      <div class="phase-badge">50% OFF</div>
-      <p class="phase-detail">
-        前日までのご予約で、<br>
-        最大の還元期間です。
+    <!-- 感謝の物語 -->
+    <div class="story-card">
+      <p class="story-lead">― 大切なお知らせ ―</p>
+      <p class="story-text">
+        このたび、<br>
+        より丁寧なサービスをお届けするため、<br>
+        <span class="story-strong">9月より料金改定</span>を<br>
+        させていただくこととなりました。
       </p>
     </div>
 
-    <!-- Phase 2 -->
-    <div class="campaign-card phase-2">
-      <div class="phase-label">PHASE 2 ／ 本オープン記念</div>
-      <div class="phase-date">
-        <span class="date-icon">📅</span>
-        <span>6月11日(木)〜30日(火)</span>
+    <!-- 早期ご予約特典 -->
+    <div class="privilege-card">
+      <div class="privilege-badge">EARLY BOOKING</div>
+      <div class="privilege-headline">
+        今なら間に合います。
       </div>
-      <div class="phase-headline">全コース<br><span class="phase-price">『1,000円引き』</span></div>
-      <div class="phase-badge gold-badge">GRAND OPEN</div>
-      <p class="phase-detail">
-        前日までのご予約で、<br>
-        正式オープンを祝した<br>
-        特別価格です。
+      <div class="privilege-main">
+        <div class="privilege-line">
+          <span class="privilege-num">01</span>
+          <p><span class="privilege-highlight">8月31日まで</span>にご予約</p>
+        </div>
+        <div class="privilege-plus">＋</div>
+        <div class="privilege-line">
+          <span class="privilege-num">02</span>
+          <p>一度でも私の施術を<br>お受けくださった方</p>
+        </div>
+      </div>
+      <div class="privilege-result">
+        <div class="privilege-result-label">＝ 特典</div>
+        <div class="privilege-result-main">
+          <span class="privilege-result-strong">今年いっぱい</span><br>
+          <span class="privilege-result-price">現在の価格</span>のまま<br>
+          ご案内いたします
+        </div>
+      </div>
+      <p class="privilege-note">
+        "馴染みのお客様"として、<br>
+        ゆっくりとお身体を整える<br>
+        時間をお届けし続けます。
       </p>
     </div>
   </section>
@@ -1436,11 +1918,11 @@
     <h2 class="section-title">コース・料金</h2>
     <p class="menu-intro">
       お疲れの度合いに合わせて、<br>
-      3つのコースからお選びいただけます。
+      4つのコースからお選びいただけます。
     </p>
 
     <div class="price-note-top">
-      ↓ 表示価格は <span class="gold-text">「6月後半キャンペーン適用価格」</span>です ↓
+      ↓ 現在の価格（<span class="gold-text">〜 年内まで継続予定</span>） ↓
     </div>
 
     <div class="course-list">
@@ -1450,11 +1932,9 @@
           <span class="course-name">標準コース</span>
         </div>
         <div class="course-price-wrap">
-          <span class="course-regular">通常 ¥4,500</span>
           <div class="course-price">
-            3,500<span class="yen">円</span>
+            4,500<span class="yen">円</span>
           </div>
-          <span class="course-discount">▲ 1,000円引き</span>
         </div>
       </div>
 
@@ -1465,42 +1945,128 @@
           <span class="course-name">疲労リセット</span>
         </div>
         <div class="course-price-wrap">
-          <span class="course-regular">通常 ¥6,500</span>
           <div class="course-price">
-            5,500<span class="yen">円</span>
+            6,500<span class="yen">円</span>
           </div>
-          <span class="course-discount">▲ 1,000円引き</span>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-head">
+          <span class="course-time">120分</span>
+          <span class="course-name">至福コース</span>
+        </div>
+        <div class="course-price-wrap">
+          <div class="course-price">
+            8,000<span class="yen">円</span>
+          </div>
         </div>
       </div>
 
       <div class="course-card">
         <div class="course-head">
           <span class="course-time">150分</span>
-          <span class="course-name">超絶リセット</span>
+          <span class="course-name">極楽コース</span>
         </div>
         <div class="course-price-wrap">
-          <span class="course-regular">通常 ¥10,000</span>
           <div class="course-price">
-            9,000<span class="yen">円</span>
+            10,000<span class="yen">円</span>
           </div>
-          <span class="course-discount">▲ 1,000円引き</span>
         </div>
       </div>
     </div>
 
-    <div class="campaign-note">
-      <div class="campaign-note-label">2つのキャンペーン期間</div>
-      <div class="campaign-period">
-        <div class="campaign-period-row">
-          <span class="period-tag period-tag-red">6/5〜6/10</span>
-          <span class="period-detail">通常料金が<span class="gold-text">ほぼ半額</span>に</span>
+    <!-- オプション -->
+    <div class="option-card">
+      <div class="option-badge">+ OPTION</div>
+      <div class="option-body">
+        <div class="option-title">
+          オイルフットケア
         </div>
-        <div class="campaign-period-row">
-          <span class="period-tag period-tag-gold">6/11〜6/30</span>
-          <span class="period-detail">通常料金から<span class="gold-text">1,000円引き</span><br><span class="period-sub">（上記表示価格）</span></span>
+        <div class="option-price">
+          <span class="option-plus">＋</span>1,000<span class="yen-small">円</span>
         </div>
       </div>
+      <p class="option-note">
+        全コースに追加可能。<br>
+        <span class="option-highlight">コース時間内</span>に組み込みますので、<br>
+        施術時間はそのままお楽しみいただけます。
+      </p>
     </div>
+
+    <div class="campaign-note">
+      <div class="campaign-note-label">料金改定のお知らせ</div>
+      <div class="campaign-period">
+        <div class="campaign-period-row">
+          <span class="period-tag period-tag-gold">〜 8/31</span>
+          <span class="period-detail">上記価格でご案内<br><span class="period-sub">（ご予約受付分）</span></span>
+        </div>
+        <div class="campaign-period-row">
+          <span class="period-tag period-tag-red">9月〜</span>
+          <span class="period-detail"><span class="gold-text">料金改定</span>を予定<br><span class="period-sub">（新価格でのご案内へ）</span></span>
+        </div>
+      </div>
+      <p class="campaign-note-bottom">
+        ※ 8/31までにご予約 + 一度施術をお受けの方は、<br>
+        <span class="gold-text">年内は上記価格を継続</span>いたします
+      </p>
+    </div>
+  </section>
+
+  <!-- ⑤.6 LINE登録・夏季限定特典 -->
+  <section class="line-privilege">
+    <span class="section-label" style="color: var(--line-green);">SUMMER LIMITED / LINE PRIVILEGE</span>
+    <h2 class="section-title">
+      <span class="line-icon-inline">L</span> 夏季限定<br>
+      LINE登録特典
+    </h2>
+    <p class="line-privilege-intro">
+      <span class="deadline-tag">〜 8月31日まで</span><br>
+      公式LINEにご登録いただいた方限定で、<br>
+      オリジナル<span class="lp-strong">ショップカード</span>を<br>
+      プレゼントいたします。
+    </p>
+
+    <!-- ショップカードのビジュアル -->
+    <div class="shop-card">
+      <div class="shop-card-header">
+        <span class="shop-card-brand">TOMOYAMIN</span>
+        <span class="shop-card-title">ORIGINAL SHOP CARD</span>
+      </div>
+      <div class="stamp-grid">
+        <div class="stamp">1</div>
+        <div class="stamp">2</div>
+        <div class="stamp">3</div>
+        <div class="stamp">4</div>
+        <div class="stamp">5</div>
+        <div class="stamp final">
+          <span class="stamp-star">★</span>
+          <span class="stamp-label">GOAL</span>
+        </div>
+      </div>
+      <div class="shop-card-footer">
+        <span class="shop-card-note">1回のご利用 = 1スタンプ</span>
+      </div>
+    </div>
+
+    <!-- 特典内容 -->
+    <div class="reward-box">
+      <div class="reward-arrow">↓ スタンプが貯まると ↓</div>
+      <div class="reward-main">
+        <span class="reward-time">30分延長</span><br>
+        <span class="reward-strong">無料券</span>
+      </div>
+      <p class="reward-detail">
+        例：通常90分 →<span class="reward-highlight">120分にアップグレード</span>可能に。<br>
+        施術時間そのままで、<br>
+        さらにじっくり整える時間へ。
+      </p>
+    </div>
+
+    <p class="line-privilege-note">
+      ※ 8月31日までにご登録の方が対象です<br>
+      ※ ショップカードはご来店時にお渡しいたします
+    </p>
   </section>
 
   <!-- ⑤.5 共通特典 -->
@@ -1581,7 +2147,9 @@
     <div class="notes-title">― 注意事項 ―</div>
     <ul class="notes-list">
       <li>対応エリア：上富田町・田辺市・白浜町</li>
-      <li>キャンペーンご利用は前日までのご予約が必要です</li>
+      <li>早期ご予約特典は、8月31日までのご予約かつ一度でも施術をお受けの方が対象です</li>
+      <li>ショップカード配布は、8月31日までに公式LINEをご登録の方が対象です</li>
+      <li>9月より料金改定を予定しております（詳細は改めてご案内いたします）</li>
       <li>遠方は事前決済のみ</li>
       <li>男性専門（女性はご夫婦・同伴のみ対応）</li>
     </ul>
