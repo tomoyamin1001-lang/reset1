@@ -320,6 +320,380 @@
     margin-bottom: 20px;
   }
 
+  /* Business Card (名刺スタイル) */
+  .business-card {
+    background:
+      linear-gradient(135deg, #fefdf9 0%, #f5f0e6 100%);
+    border: 1.5px solid var(--gold);
+    border-radius: 4px;
+    padding: 32px 24px 24px;
+    margin-bottom: 24px;
+    box-shadow:
+      0 10px 30px rgba(13, 27, 42, 0.15),
+      inset 0 0 40px rgba(201, 169, 97, 0.04);
+    position: relative;
+  }
+
+  .bc-corner {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+  }
+
+  .bc-corner-tl {
+    top: 8px;
+    left: 8px;
+    border-top: 2px solid var(--gold);
+    border-left: 2px solid var(--gold);
+  }
+
+  .bc-corner-tr {
+    top: 8px;
+    right: 8px;
+    border-top: 2px solid var(--gold);
+    border-right: 2px solid var(--gold);
+  }
+
+  .bc-corner-bl {
+    bottom: 8px;
+    left: 8px;
+    border-bottom: 2px solid var(--gold);
+    border-left: 2px solid var(--gold);
+  }
+
+  .bc-corner-br {
+    bottom: 8px;
+    right: 8px;
+    border-bottom: 2px solid var(--gold);
+    border-right: 2px solid var(--gold);
+  }
+
+  .bc-top {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed rgba(201, 169, 97, 0.5);
+  }
+
+  .bc-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--gold);
+    box-shadow: 0 4px 14px rgba(13, 27, 42, 0.18);
+    background: var(--bg-cream);
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .bc-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+    display: block;
+  }
+
+  .bc-photo .placeholder-small {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 9px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .bc-photo img.profile-loaded + .placeholder-small {
+    display: none;
+  }
+
+  .bc-header {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .bc-brand {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: Georgia, serif;
+  }
+
+  .bc-role {
+    display: inline-block;
+    background: var(--navy-900);
+    color: var(--gold);
+    font-size: 10px;
+    padding: 3px 12px;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+    margin-bottom: 12px;
+    border-radius: 2px;
+  }
+
+  .bc-name-jp {
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", "游明朝", serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--navy-900);
+    letter-spacing: 0.15em;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+
+  .bc-name-en {
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    color: var(--text-muted);
+    font-family: Georgia, serif;
+    font-weight: 500;
+  }
+
+  .bc-info {
+    margin: 0;
+  }
+
+  .bc-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 4px;
+    border-bottom: 1px solid rgba(201, 169, 97, 0.18);
+    font-size: 13px;
+  }
+
+  .bc-row:last-child {
+    border-bottom: none;
+  }
+
+  .bc-row dt {
+    color: var(--text-muted);
+    font-weight: 700;
+    min-width: 76px;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+    padding-top: 2px;
+  }
+
+  .bc-row dd {
+    color: var(--navy-900);
+    flex: 1;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .bc-mark {
+    display: inline-block;
+    color: var(--navy-900);
+    font-weight: 800;
+    background: linear-gradient(transparent 65%, rgba(201, 169, 97, 0.4) 65%);
+    padding: 0 4px;
+  }
+
+  /* Local Message (地元・移住者向け) */
+  .local-message {
+    background: #ffffff;
+    border-left: 4px solid var(--gold);
+    padding: 22px 22px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 14px rgba(13, 27, 42, 0.05);
+  }
+
+  .local-badge-tag {
+    display: block;
+    text-align: center;
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  .local-message-text {
+    font-size: 14px;
+    line-height: 2;
+    color: var(--text-dark);
+    text-align: center;
+  }
+
+  .local-highlight {
+    color: var(--navy-900);
+    font-weight: 700;
+    background: linear-gradient(transparent 65%, rgba(201, 169, 97, 0.35) 65%);
+    padding: 0 4px;
+  }
+
+  .local-strong {
+    display: inline-block;
+    color: var(--navy-900);
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: 4px;
+  }
+
+  /* Privacy Message (お忍び向け) */
+  .privacy-message {
+    background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-700) 100%);
+    color: #fff;
+    padding: 26px 22px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(13, 27, 42, 0.18);
+    border: 1px solid rgba(201, 169, 97, 0.25);
+  }
+
+  .privacy-badge-tag {
+    display: block;
+    text-align: center;
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  .privacy-message-text {
+    font-size: 14px;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .privacy-highlight {
+    color: var(--gold);
+    font-weight: 700;
+  }
+
+  .privacy-strong {
+    display: inline-block;
+    color: var(--gold);
+    font-weight: 800;
+    font-size: 16px;
+    background: linear-gradient(transparent 65%, rgba(201, 169, 97, 0.25) 65%);
+    padding: 0 4px;
+  }
+
+  .privacy-points {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 16px;
+    border-top: 1px dashed rgba(201, 169, 97, 0.3);
+  }
+
+  .privacy-point {
+    background: rgba(201, 169, 97, 0.15);
+    color: var(--gold);
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 100px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border: 1px solid rgba(201, 169, 97, 0.3);
+  }
+
+  /* Clientele Note (社長・会長層) */
+  .clientele-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 22px;
+    padding: 18px 18px;
+    background: rgba(201, 169, 97, 0.1);
+    border: 1px solid rgba(201, 169, 97, 0.4);
+    border-radius: 4px;
+  }
+
+  .clientele-mark {
+    color: var(--gold);
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+
+  .clientele-note p {
+    font-size: 13px;
+    line-height: 1.85;
+    color: rgba(255, 255, 255, 0.92);
+    text-align: left;
+    flex: 1;
+  }
+
+  .clientele-strong {
+    color: var(--gold);
+    font-weight: 800;
+    letter-spacing: 0.03em;
+  }
+
+  .clientele-sub {
+    display: block;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.55);
+    letter-spacing: 0.03em;
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  /* Clientele Box (お客様の声セクション) */
+  .clientele-box {
+    background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-700) 100%);
+    color: #fff;
+    padding: 26px 22px;
+    border-radius: 6px;
+    margin-bottom: 28px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(13, 27, 42, 0.15);
+    border: 1px solid rgba(201, 169, 97, 0.3);
+  }
+
+  .clientele-box-label {
+    display: block;
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  .clientele-box-main {
+    font-size: 15px;
+    line-height: 1.9;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed rgba(201, 169, 97, 0.35);
+  }
+
+  .clientele-box-strong {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    background: linear-gradient(transparent 65%, rgba(201, 169, 97, 0.2) 65%);
+    padding: 2px 6px;
+    margin: 4px 0;
+  }
+
+  .clientele-box-sub {
+    font-size: 12px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
   /* Profile Header (写真＋経歴の横並び) */
   .profile-header {
     display: flex;
@@ -2335,19 +2709,79 @@
     <span class="section-label">MY APPROACH</span>
     <h2 class="section-title">私の特徴</h2>
 
-    <!-- プロフィール（写真＋経歴を横並び） -->
-    <div class="profile-header">
-      <div class="profile-image-wrap-small">
-        <img src="profile.jpg" alt="施術者プロフィール" onload="this.classList.add('profile-loaded')">
-        <div class="placeholder-small">profile.jpg<br>を配置</div>
+    <!-- 施術者名刺 -->
+    <div class="business-card">
+      <div class="bc-corner bc-corner-tl"></div>
+      <div class="bc-corner bc-corner-tr"></div>
+      <div class="bc-corner bc-corner-bl"></div>
+      <div class="bc-corner bc-corner-br"></div>
+
+      <div class="bc-top">
+        <div class="bc-photo">
+          <img src="profile.jpg" alt="施術者 宮本 正信" onload="this.classList.add('profile-loaded')">
+          <div class="placeholder-small">profile.jpg<br>を配置</div>
+        </div>
+        <div class="bc-header">
+          <p class="bc-brand">出張もみほぐし TOMOYAMIN</p>
+          <p class="bc-role">施 術 者</p>
+          <h3 class="bc-name-jp">宮本 正信</h3>
+          <p class="bc-name-en">MIYAMOTO MASANOBU</p>
+        </div>
       </div>
-      <div class="profile-intro">
-        <p class="profile-role">― 施術者プロフィール ―</p>
-        <p class="profile-career">
-          白浜の大型温浴施設で、<br>
-          疲れを抱えた多くの<br>
-          男性を施術してきました。<br>
-          <span class="profile-career-strong">キャリア11年目。</span>
+
+      <dl class="bc-info">
+        <div class="bc-row">
+          <dt>生年月日</dt>
+          <dd>1979年7月28日</dd>
+        </div>
+        <div class="bc-row">
+          <dt>出　　身</dt>
+          <dd><span class="bc-mark">上富田町</span></dd>
+        </div>
+        <div class="bc-row">
+          <dt>キャリア</dt>
+          <dd>白浜の大型温浴施設にて <span class="bc-mark">11年目</span></dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- 地元・移住者向けメッセージ -->
+    <div class="local-message">
+      <span class="local-badge-tag">― 地元・上富田町出身 ―</span>
+      <p class="local-message-text">
+        地元の方はもちろん、<br>
+        <span class="local-highlight">他府県から移住されてきた方</span>にも、<br>
+        安心してご利用いただけるように。<br>
+        <span class="local-strong">"同じ土地の男"</span>として、<br>
+        誠実にお応えします。
+      </p>
+    </div>
+
+    <!-- プライバシー重視の方向けメッセージ -->
+    <div class="privacy-message">
+      <span class="privacy-badge-tag">― 人目を気にせず、お忍びで ―</span>
+      <p class="privacy-message-text">
+        「マッサージには行きたい。<br>
+        でも <span class="privacy-highlight">お店に一人で入るのは<br>気恥ずかしい</span>...」<br>
+        <br>
+        そんな声にお応えするのが、<br>
+        <span class="privacy-strong">出張型 TOMOYAMIN</span>。<br>
+        <br>
+        ご自宅で、誰にも会わずに、<br>
+        密かに疲れを整えていただけます。
+      </p>
+      <div class="privacy-points">
+        <span class="privacy-point">✓ 人目ゼロ</span>
+        <span class="privacy-point">✓ 移動ゼロ</span>
+        <span class="privacy-point">✓ 待ち時間ゼロ</span>
+      </div>
+
+      <div class="clientele-note">
+        <span class="clientele-mark">◎</span>
+        <p>
+          <span class="clientele-strong">地元の社長・会長・経営者層</span>の<br>
+          方々にも密かにご利用いただいています。<br>
+          <span class="clientele-sub">（守秘義務の観点から詳細は控えます）</span>
         </p>
       </div>
     </div>
@@ -2413,6 +2847,20 @@
       アンケートにご協力いただいた<br>
       お客様からの<span class="voice-intro-strong">リアルなお声</span>です。
     </p>
+
+    <div class="clientele-box">
+      <span class="clientele-box-label">― ご利用者様の傾向 ―</span>
+      <p class="clientele-box-main">
+        地元・和歌山エリアの<br>
+        <span class="clientele-box-strong">社長・会長・経営者様</span><br>
+        にご支持いただいております。
+      </p>
+      <p class="clientele-box-sub">
+        時間を大切にされる方、<br>
+        プライバシーを重視される方に、<br>
+        特にご愛顧いただいています。
+      </p>
+    </div>
 
     <!-- Voice 1 -->
     <div class="voice-card">
