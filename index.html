@@ -215,6 +215,30 @@
     border-bottom: 1px solid #e5e0d5;
   }
 
+  .empathy-lead {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-dark);
+    line-height: 2;
+    margin-bottom: 28px;
+    padding: 20px 16px;
+    background: #fdfaf3;
+    border-radius: 6px;
+    border: 1px solid #ece6d8;
+  }
+
+  .men-only-tag {
+    display: inline-block;
+    background: var(--navy-900);
+    color: var(--gold);
+    font-size: 13px;
+    padding: 6px 18px;
+    border-radius: 100px;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
   /* ===== Section 3: Service ===== */
   .service {
     background: var(--bg-cream);
@@ -294,6 +318,149 @@
     letter-spacing: 0.2em;
     font-weight: 600;
     margin-bottom: 20px;
+  }
+
+  /* Profile Header (写真＋経歴の横並び) */
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ece6d8;
+    box-shadow: 0 6px 20px rgba(13, 27, 42, 0.06);
+    margin-bottom: 24px;
+  }
+
+  .profile-image-wrap-small {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--gold);
+    box-shadow: 0 6px 16px rgba(13, 27, 42, 0.15);
+    background: var(--bg-cream);
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .profile-image-wrap-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+    display: block;
+  }
+
+  .profile-image-wrap-small .placeholder-small {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 9px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 6px;
+  }
+
+  .profile-image-wrap-small img.profile-loaded + .placeholder-small {
+    display: none;
+  }
+
+  .profile-intro {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .profile-role {
+    font-size: 10px;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .profile-career {
+    font-size: 13px;
+    line-height: 1.85;
+    color: var(--text-dark);
+    font-weight: 500;
+  }
+
+  .profile-career-strong {
+    display: inline-block;
+    color: var(--navy-900);
+    font-weight: 800;
+    font-size: 15px;
+    background: linear-gradient(transparent 65%, rgba(201, 169, 97, 0.4) 65%);
+    padding: 0 4px;
+    margin-top: 4px;
+  }
+
+  /* MOTTO Card */
+  .motto-card {
+    background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-700) 100%);
+    color: #fff;
+    border-radius: 8px;
+    padding: 32px 24px 28px;
+    margin-bottom: 24px;
+    text-align: center;
+    box-shadow: 0 12px 28px rgba(13, 27, 42, 0.22);
+    position: relative;
+    border: 1px solid rgba(201, 169, 97, 0.25);
+  }
+
+  .motto-label {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy-900);
+    font-size: 11px;
+    padding: 5px 16px;
+    letter-spacing: 0.28em;
+    font-weight: 700;
+    border-radius: 2px;
+    margin-bottom: 22px;
+  }
+
+  .motto-quote {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.7;
+    color: #fff;
+    letter-spacing: 0.02em;
+  }
+
+  .motto-highlight {
+    color: var(--gold);
+    background: linear-gradient(transparent 65%, rgba(201, 169, 97, 0.25) 65%);
+    padding: 0 6px;
+  }
+
+  .motto-divider {
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+    margin: 22px auto;
+    opacity: 0.6;
+  }
+
+  .motto-reason {
+    font-size: 13px;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .motto-strong {
+    display: inline-block;
+    color: var(--gold);
+    font-weight: 800;
+    font-size: 15px;
+    background: linear-gradient(transparent 65%, rgba(201, 169, 97, 0.25) 65%);
+    padding: 0 4px;
+    margin: 2px 0;
   }
 
   .philosophy-card {
@@ -758,6 +925,37 @@
     z-index: 1;
   }
 
+  .men-only-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 0.35em;
+    font-weight: 700;
+    margin: 20px 0 12px;
+    padding: 6px 20px;
+    border-top: 1px solid rgba(201, 169, 97, 0.4);
+    border-bottom: 1px solid rgba(201, 169, 97, 0.4);
+    position: relative;
+    z-index: 1;
+  }
+
+  .men-only-dot {
+    font-size: 8px;
+    opacity: 0.7;
+  }
+
+  .brand-sub {
+    display: block;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    margin-bottom: 10px;
+  }
+
   .hero-brand {
     color: var(--text-light);
     font-size: 24px;
@@ -802,6 +1000,169 @@
     color: var(--gold);
     background: linear-gradient(transparent 65%, rgba(201, 169, 97, 0.25) 65%);
     padding: 0 6px;
+  }
+
+  /* ===== Section: Voices (お客様の声) ===== */
+  .voices {
+    background: var(--bg-cream);
+    padding: 64px 28px;
+  }
+
+  .voice-stats {
+    display: flex;
+    align-items: stretch;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px 16px;
+    margin-bottom: 32px;
+    box-shadow: 0 6px 20px rgba(13, 27, 42, 0.08);
+    border: 1px solid #ece6d8;
+  }
+
+  .voice-stat {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .voice-stat-num {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--navy-900);
+    line-height: 1;
+    letter-spacing: 0.02em;
+    font-family: Georgia, serif;
+  }
+
+  .voice-stat-unit {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-left: 2px;
+  }
+
+  .voice-stat-label {
+    font-size: 11px;
+    color: var(--text-dark);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+
+  .voice-stat-stars {
+    font-size: 14px;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+  }
+
+  .voice-stat-sub {
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  .voice-stat-divider {
+    width: 1px;
+    background: #ece6d8;
+    margin: 8px 0;
+  }
+
+  .voice-intro {
+    text-align: center;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--text-dark);
+    margin-bottom: 28px;
+  }
+
+  .voice-intro-strong {
+    color: var(--navy-900);
+    font-weight: 700;
+    background: linear-gradient(transparent 65%, rgba(201, 169, 97, 0.35) 65%);
+    padding: 0 4px;
+  }
+
+  .voice-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 22px 22px 20px;
+    margin-bottom: 16px;
+    border: 1px solid #ece6d8;
+    box-shadow: 0 4px 16px rgba(13, 27, 42, 0.05);
+    border-left: 4px solid var(--gold);
+  }
+
+  .voice-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #f0ebe0;
+  }
+
+  .voice-stars {
+    color: var(--gold);
+    font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+
+  .voice-badge {
+    background: var(--gold);
+    color: var(--navy-900);
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+
+  .voice-badge.badge-best {
+    background: var(--navy-900);
+    color: var(--gold);
+  }
+
+  .voice-worry {
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    border-left: 2px solid var(--gold);
+  }
+
+  .voice-comment {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--text-dark);
+    margin-bottom: 14px;
+    padding-left: 4px;
+  }
+
+  .voice-highlight {
+    color: var(--navy-900);
+    font-weight: 700;
+    background: linear-gradient(transparent 65%, rgba(201, 169, 97, 0.3) 65%);
+    padding: 0 4px;
+  }
+
+  .voice-profile {
+    text-align: right;
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+
+  .voice-disclaimer {
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.9;
+    color: var(--text-muted);
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #ece6d8;
   }
 
   /* ===== Section: Campaign (6月キャンペーン) ===== */
@@ -1900,9 +2261,12 @@
   <!-- ① ファーストビュー -->
   <section class="hero">
     <span class="hero-badge">〜 8月31日 早期ご予約特典</span>
+    <div class="men-only-mark">
+      <span class="men-only-dot">●</span> FOR MEN ONLY <span class="men-only-dot">●</span>
+    </div>
     <p class="hero-tagline">男の疲労リセット</p>
     <h1 class="hero-brand">
-      出張もみほぐし<br>
+      <span class="brand-sub">男性専門・出張リラクゼーション</span>
       <span class="brand-name">TOMOYAMIN</span>
     </h1>
     <p class="hero-area">和歌山（田辺・上富田・白浜周辺）</p>
@@ -1927,16 +2291,22 @@
 
   <!-- ② 共感 -->
   <section class="empathy">
-    <span class="section-label">YOUR WORRIES</span>
-    <h2 class="section-title">こんなお悩み<br>ありませんか？</h2>
+    <span class="section-label">FOR MEN ONLY</span>
+    <h2 class="section-title">頑張る男性のための<br>出張リラクゼーション</h2>
+    <p class="empathy-lead">
+      <span class="men-only-tag">男性専門</span><br>
+      だからこそ、<br>
+      "同じ男"としてわかる疲れがあります。
+    </p>
     <ul class="worry-list">
       <li>肩や腰が重い</li>
       <li>疲れが抜けない</li>
       <li>外に出るのがしんどい</li>
+      <li>店に通うのが億劫</li>
     </ul>
     <p class="empathy-message">
       そんな方に向けた<br>
-      <strong>出張リラクゼーション</strong>です
+      <strong>男性専門・出張リラクゼーション</strong>です
     </p>
   </section>
 
@@ -1965,11 +2335,41 @@
     <span class="section-label">MY APPROACH</span>
     <h2 class="section-title">私の特徴</h2>
 
-    <div class="profile-image-wrap">
-      <img src="profile.jpg" alt="施術者プロフィール" onload="this.classList.add('profile-loaded')">
-      <div class="placeholder">profile.jpg を<br>同じフォルダに<br>アップロードしてください</div>
+    <!-- プロフィール（写真＋経歴を横並び） -->
+    <div class="profile-header">
+      <div class="profile-image-wrap-small">
+        <img src="profile.jpg" alt="施術者プロフィール" onload="this.classList.add('profile-loaded')">
+        <div class="placeholder-small">profile.jpg<br>を配置</div>
+      </div>
+      <div class="profile-intro">
+        <p class="profile-role">― 施術者プロフィール ―</p>
+        <p class="profile-career">
+          白浜の大型温浴施設で、<br>
+          疲れを抱えた多くの<br>
+          男性を施術してきました。<br>
+          <span class="profile-career-strong">キャリア11年目。</span>
+        </p>
+      </div>
     </div>
-    <p class="profile-name">― 施術者 ―</p>
+
+    <!-- MOTTOカード -->
+    <div class="motto-card">
+      <span class="motto-label">MY MOTTO</span>
+      <p class="motto-quote">
+        「施術中に<br>
+        <span class="motto-highlight">スヤスヤと眠って</span><br>
+        いただくこと」<br>
+        をモットーにしています。
+      </p>
+      <div class="motto-divider"></div>
+      <p class="motto-reason">
+        眠りに落ちるほど<br>
+        リラックスした状態こそ、<br>
+        お辛い箇所が<br>
+        <span class="motto-strong">深くほぐれるサイン</span><br>
+        だからです。
+      </p>
+    </div>
 
     <div class="philosophy-card">
       <div class="philosophy-mark">"</div>
@@ -1988,6 +2388,94 @@
         実感していただけるよう努めています。
       </p>
     </div>
+  </section>
+
+  <!-- ③.7 お客様の声 -->
+  <section class="voices">
+    <span class="section-label">CUSTOMER VOICE</span>
+    <h2 class="section-title">お客様の声</h2>
+
+    <div class="voice-stats">
+      <div class="voice-stat">
+        <span class="voice-stat-num">4.7<span class="voice-stat-unit">/5.0</span></span>
+        <span class="voice-stat-label">平均満足度</span>
+        <span class="voice-stat-stars">★★★★★</span>
+      </div>
+      <div class="voice-stat-divider"></div>
+      <div class="voice-stat">
+        <span class="voice-stat-num">100<span class="voice-stat-unit">%</span></span>
+        <span class="voice-stat-label">満足以上のご評価</span>
+        <span class="voice-stat-sub">「大変満足」「満足」のみ</span>
+      </div>
+    </div>
+
+    <p class="voice-intro">
+      アンケートにご協力いただいた<br>
+      お客様からの<span class="voice-intro-strong">リアルなお声</span>です。
+    </p>
+
+    <!-- Voice 1 -->
+    <div class="voice-card">
+      <div class="voice-rating">
+        <span class="voice-stars">★★★★★</span>
+        <span class="voice-badge badge-best">大変満足</span>
+      </div>
+      <p class="voice-worry">背中の強張り</p>
+      <p class="voice-comment">
+        大変良かったです。<br>
+        <span class="voice-highlight">自宅で受けられるのが嬉しい。</span>
+      </p>
+      <p class="voice-profile">60代・会社役員 / 白浜町</p>
+    </div>
+
+    <!-- Voice 2 -->
+    <div class="voice-card">
+      <div class="voice-rating">
+        <span class="voice-stars">★★★★★</span>
+        <span class="voice-badge badge-best">大変満足</span>
+      </div>
+      <p class="voice-worry">首周り・肩腰の疲労</p>
+      <p class="voice-comment">
+        首のコリが減り、<br>
+        身体全身楽になりました。
+      </p>
+      <p class="voice-profile">50代・僧侶 / 白浜町</p>
+    </div>
+
+    <!-- Voice 3 -->
+    <div class="voice-card">
+      <div class="voice-rating">
+        <span class="voice-stars">★★★★★</span>
+        <span class="voice-badge badge-best">大変満足</span>
+      </div>
+      <p class="voice-worry">上半身のコリ</p>
+      <p class="voice-comment">
+        腰の重さが軽くなりました。<br>
+        <span class="voice-highlight">次はフットマッサージも<br>お願いします。</span>
+      </p>
+      <p class="voice-profile">50代・自営業</p>
+    </div>
+
+    <!-- Voice 4 -->
+    <div class="voice-card">
+      <div class="voice-rating">
+        <span class="voice-stars">★★★★☆</span>
+        <span class="voice-badge">満足</span>
+      </div>
+      <p class="voice-worry">慢性的な全身の張り</p>
+      <p class="voice-comment">
+        細やかな希望にも<br>
+        応じていただけて満足です。<br>
+        次回はもう少し長めに<br>
+        受けたいと思います。
+      </p>
+      <p class="voice-profile">40代・サービス業 / 上富田町</p>
+    </div>
+
+    <p class="voice-disclaimer">
+      ※ 個人の感想であり、施術効果を保証するものではありません<br>
+      ※ 掲載はご本人のご了承のもと、匿名化しております
+    </p>
   </section>
 
   <!-- ④ 夏の特別ご案内（早期ご予約特典） -->
